@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 4, 2013 10:45:52 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="entities.Event" table="Event" catalog="GamificationDB">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="object" class="entities.Object" fetch="select">
+            <column name="object" not-null="true" />
+        </many-to-one>
+        <many-to-one name="player" class="entities.Player" fetch="select">
+            <column name="player" not-null="true" />
+        </many-to-one>
+        <many-to-one name="eventType" class="entities.EventType" fetch="select">
+            <column name="eventType" not-null="true" />
+        </many-to-one>
+        <property name="date" type="timestamp">
+            <column name="date" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

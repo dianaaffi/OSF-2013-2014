@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="GamificationDB"/>
+  <table-filter match-name="Application"/>
+  <table-filter match-name="PlayerReward"/>
+  <table-filter match-name="Object"/>
+  <table-filter match-name="TeamPlayer"/>
+  <table-filter match-name="Point"/>
+  <table-filter match-name="Quest"/>
+  <table-filter match-name="Action"/>
+  <table-filter match-name="ObjectType"/>
+  <table-filter match-name="Privilege"/>
+  <table-filter match-name="EventType"/>
+  <table-filter match-name="Player"/>
+  <table-filter match-name="Event"/>
+  <table-filter match-name="Voucher"/>
+  <table-filter match-name="Badge"/>
+  <table-filter match-name="TeamRole"/>
+  <table-filter match-name="Reward"/>
+</hibernate-reverse-engineering>
