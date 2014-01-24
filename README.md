@@ -15,5 +15,8 @@ OSF-Gamification API offers the following features:
 </ul>
 
 <h1>Documentation</h1>
-The documentation is deployed on the Apiary ppla
+The documentation is deployed on the Apiary platform. Follow the below link to access it:
+http://gamificationapidianajosephahmed.apiary.io
+
+
 
