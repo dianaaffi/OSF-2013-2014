@@ -1,8 +1,8 @@
-<h1>OSF-Gamification</h1>
+<h1>GamificationAPI</h1>
 The project developed is an API that is designed to work as a service for other social applications. Our API manages all the users of your application including their actions and progress throughout the app.
 
 <h1>Features</h1>
-OSF-Gamification API offers the following features:
+Gamification API offers the following features:
 <ul>
 <li>Define events that can be done by the users</li>
 <li>Log all the events for each user</li>
@@ -21,7 +21,7 @@ The documentation of our web services is deployed on the Apiary platform. Access
 For a quick look at our object model and business logic behing the API, read the <a href="https://github.com/dianaaffi/OSF-2013-2014/blob/master/Gamification%20Report.pdf">pdf documentation</a> and the <a href="https://github.com/dianaaffi/OSF-2013-2014/blob/master/PresentationGamification.pdf">presentation</a> delivered with the project.
 
 <h1>Installation</h1>
-Follow the steps to install the osf-gamification API and get it ready to be used by your application:
+Follow the steps to install the gamification API and get it ready to be used by your application:
 <ol>
 <li>Download the contents of the folder GamificationAPI from the <a href="https://github.com/dianaaffi/OSF-2013-2014.git">repository</a></li>
 <li>Open the project under GamificationAPI-src in Netbeans</li>
