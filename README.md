@@ -18,8 +18,25 @@ OSF-Gamification API offers the following features:
 The documentation of our web services is deployed on the Apiary platform. Access our <a href="http://docs.gamificationapidianajosephahmed.apiary.io">online documentation</a> for more info.
 
 
-For a quick look at our object model and business logic behing the API, read the <a href="https://github.com/dianaaffi/OSF-2013-2014/blob/master/Gamification%20Report.pdf">pdf documentation</a> and the <a href="">presentation</a> delivered with the project.
+For a quick look at our object model and business logic behing the API, read the <a href="https://github.com/dianaaffi/OSF-2013-2014/blob/master/Gamification%20Report.pdf">pdf documentation</a> and the <a href="https://github.com/dianaaffi/OSF-2013-2014/blob/master/PresentationGamification.pdf">presentation</a> delivered with the project.
 
+<h1>Installation</h1>
+Follow the steps to install the osf-gamification API and get it ready to be used by your application:
+<ol>
+<li>Download the contents of the folder GamificationAPI from the <a href="https://github.com/dianaaffi/OSF-2013-2014.git">repository</a></li>
+<li>Open the project under GamificationAPI-src in Netbeans</li>
+<li>Edit the database setup script (database_setup.sh) by filling your mysql username and password</li>
+<li>run the script</li>
+</ol>
+
+Start using the API by registering your application using the provided web service.
+
+<h1>Authors</h1>
+<ul>
+<li>Diana AFFI</li>
+<li>Joseph EL MALLAH</li>
+<li>Ahmed HACHMI</li>
+</ul>
 
 
 
