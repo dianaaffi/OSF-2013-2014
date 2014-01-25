@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 24, 2013 1:07:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="entities.PlayerReward" table="PlayerReward" catalog="GamificationDB">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="player" class="entities.Player" fetch="select">
+            <column name="player" not-null="true" />
+        </many-to-one>
+        <many-to-one name="reward" class="entities.Reward" fetch="select">
+            <column name="reward" not-null="true" />
+        </many-to-one>
+        <property name="attributionDate" type="timestamp">
+            <column name="attributionDate" length="19" not-null="true" />
+        </property>
+        <property name="currentLevel" type="java.lang.Float">
+            <column name="currentLevel" precision="12" scale="0" />
+        </property>
+        <property name="completionDate" type="timestamp">
+            <column name="completionDate" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

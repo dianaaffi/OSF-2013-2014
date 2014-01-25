@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 24, 2013 1:07:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="entities.Action" table="Action" catalog="GamificationDB">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="eventType" class="entities.EventType" fetch="select">
+            <column name="eventType" not-null="true" />
+        </many-to-one>
+        <many-to-one name="application" class="entities.Application" fetch="select">
+            <column name="application" not-null="true" />
+        </many-to-one>
+        <many-to-one name="objectType" class="entities.ObjectType" fetch="select">
+            <column name="objectType" />
+        </many-to-one>
+        <many-to-one name="rewardByInputReward" class="entities.Reward" fetch="select">
+            <column name="inputReward" />
+        </many-to-one>
+        <many-to-one name="rewardByReward" class="entities.Reward" fetch="select">
+            <column name="reward" not-null="true" />
+        </many-to-one>
+        <property name="inputValue" type="string">
+            <column name="inputValue" length="45" />
+        </property>
+        <property name="outputValue" type="string">
+            <column name="outputValue" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 24, 2013 1:07:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="entities.TeamPlayer" table="TeamPlayer" catalog="GamificationDB">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="playerByPlayerId" class="entities.Player" fetch="select">
+            <column name="playerId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="playerByTeamId" class="entities.Player" fetch="select">
+            <column name="teamId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="teamRole" class="entities.TeamRole" fetch="select">
+            <column name="teamRole" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
